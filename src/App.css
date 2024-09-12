@@ -295,7 +295,7 @@ h3 {
 
 .organizer-item.active {
   background-color: #d3e7fd;
-  color: #2D93FA;
+  color: #2d93fa;
   border: 1px solid #d3e7fd;
 }
 
@@ -336,14 +336,13 @@ h3 {
   font-weight: bolder;
 }
 
-
 .wallet-form {
   border-radius: 10px;
   margin-block: 14px;
   margin-inline: 64px;
   display: flex;
   justify-content: end;
-  
+  height: fit-content;
 }
 
 .wallet-form input {
@@ -359,15 +358,51 @@ h3 {
   width: fit-content;
   height: 100%;
   border-radius: 10px;
-  
 }
 
 .wallet-list-head {
   display: flex;
   left: 0;
   right: 0;
+  align-items: center;
 }
 
 .head-child {
   position: relative;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  height: 80vh;
+  max-width: 80vh;
+  width: 100%;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: auto;
+  z-index: 1001;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
